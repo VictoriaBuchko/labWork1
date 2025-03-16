@@ -29,15 +29,20 @@ console.log(personInfo({ name: "John", age: 30 }));
 //address?: string (опціональне поле)
 //Реалізуйте функцію printPerson, яка приймає об'єкт типу Person та виводить його дані у консоль.
 
+
 interface Person {
   name: string;       
   age: number;      
   address?: string;  
 }
 
-function printPerson(person: Person): void{
+function printPerson(person: Person): void {
   console.log(`Name: ${person.name}`);
   console.log(`Age: ${person.age}`);
+  
+  if (person.address) {
+    console.log(`Address: ${person.address}`);
+  }
 }
 
 printPerson({ name: "Vika", age: 19, address: "Odesa" });
