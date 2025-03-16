@@ -12,22 +12,35 @@
 //та age (тип number) і повертає рядок виду: "Name: John, Age: 30".
 
 let myString: string = "Hello";
+
 let myNumber: number = 42;
+
 let myBoolean: boolean = true;
+
 let myArray: number[] = [1, 2, 3, 4, 5];
+
 let myObject: { key: string; value: number } = { key: "id", value: 1 };
 
+
 function personInfo(person: { name: string; age: number }): string {
+
   return `Name: ${person.name}, Age: ${person.age}`;
+  
 }
 
-console.log(personInfo({ name: "John", age: 30 }));
-// console.log(personInfo({ name: "John", age: "thirty" }));
-![Рискунок 1.1 - Перегляд скомпільованого коду](1.1.jpg)
-![Рискунок 1.2 - Створені типи](1.2.jpg)
-![Рискунок 1.3 - Перевірка правильності виконання коду](1.3.jpg)
-![Рискунок 1.4 - Помилки](1.4.jpg)
 
+console.log(personInfo({ name: "John", age: 30 }));
+
+// console.log(personInfo({ name: "John", age: "thirty" }));
+
+![Рискунок 1.1 - Перегляд скомпільованого коду](1.1.jpg)
+Рискунок 1.1 - Перегляд скомпільованого коду
+![Рискунок 1.2 - Створені типи](1.2.jpg)
+Рискунок 1.2 - Створені типи
+![Рискунок 1.3 - Перевірка правильності виконання коду](1.3.jpg)
+Рискунок 1.3 - Перевірка правильності виконання коду
+![Рискунок 1.4 - Помилки](1.4.jpg)
+Рискунок 1.4 - Помилки
 
 //2. Інтерфейси---------------------------------------------------------------------------------------------------------
 //Оголосіть інтерфейс Person, який містить поля:
@@ -38,10 +51,15 @@ console.log(personInfo({ name: "John", age: 30 }));
 
 
 interface Person {
-  name: string;       
-  age: number;      
+
+  name: string;    
+  
+  age: number;    
+  
   address?: string;  
+  
 }
+
 
 function printPerson(person: Person): void {
   console.log(`Name: ${person.name}`);
