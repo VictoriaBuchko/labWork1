@@ -23,9 +23,7 @@ let myObject: { key: string; value: number } = { key: "id", value: 1 };
 
 
 function personInfo(person: { name: string; age: number }): string {
-
-  return `Name: ${person.name}, Age: ${person.age}`;
-  
+  return `Name: ${person.name}, Age: ${person.age}`; 
 }
 
 
@@ -66,10 +64,9 @@ interface Person {
 
 function printPerson(person: Person): void {
 
-  console.log(`Name: ${person.name}`);
+  console.log(`Name: ${person.name}`); 
   
-  console.log(`Age: ${person.age}`);
-  
+  console.log(`Age: ${person.age}`);   
   
   if (person.address) {
   
