@@ -20,6 +20,7 @@ function personInfo(person: { name: string; age: number }): string {
 
 console.log(personInfo({ name: "John", age: 30 }));
 // console.log(personInfo({ name: "John", age: "thirty" }));
+![Рискунок 1.1 - Перегляд скомпільованого коду](1.1.png)
 
 
 //2. Інтерфейси---------------------------------------------------------------------------------------------------------
